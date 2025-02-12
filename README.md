@@ -51,7 +51,7 @@ located in the [shell]() directory. It keeps track of the current image using a 
 
 ## Configuration
 
-Run the setup.sh to [setup]() the load agent. 
+Run the [setup.sh]() to install the load agent. 
 
 The [change_background.plist]() file is configured to run the script at login and every hour. You can adjust the interval by modifying the `StartInterval` key in the plist file.
 
