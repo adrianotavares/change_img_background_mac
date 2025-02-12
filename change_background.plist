@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>co.inter.change_background</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/Users/<user>/dev/shell/change_background.sh</string>
+    </array>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>StartOnMount</key>
+    <true/>
+    <key>KeepAlive</key>
+    <false/>
+    <key>StandardOutPath</key>
+    <string>/Users/<user>/dev/shell/logs/standard-out.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/<user>/dev/shell/logs/standard-error.err</string>
+</dict>
+</plist> 
