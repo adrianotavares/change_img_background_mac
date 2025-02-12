@@ -9,6 +9,14 @@ This project contains a script and configuration files to automatically change t
 - `logs/standard-out.log`: Log file for standard output.
 - `logs/standard-error.err`: Log file for standard error.
 
+## Images
+
+- img_01.png
+- img_02.png
+- img_03.png
+- img_04.png
+- img_05.png
+
 ## Setup
 
 1. **Clone the repository**:
