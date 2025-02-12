@@ -47,7 +47,13 @@ This project contains a script and configuration files to automatically change t
 
 ## Script Details
 
-The [change_background.sh](http://_vscodecontentref_/1) script cycles through a set of images named [img_01.png](http://_vscodecontentref_/2), [img_02.png](http://_vscodecontentref_/3), [img_03.png](http://_vscodecontentref_/4), [img_04.png](http://_vscodecontentref_/5), and [img_05.png](http://_vscodecontentref_/6) located in the [shell](http://_vscodecontentref_/7) directory. It keeps track of the current image using a counter stored in [image_counter.txt](http://_vscodecontentref_/8).
+The [change_background.sh](http://_vscodecontentref_/1) script cycles through a set of images named 
+[img_01.png],
+[img_02.png], 
+[img_03.png], 
+[img_04.png], 
+[img_05.png],
+located in the [shell](http://_vscodecontentref_/7) directory. It keeps track of the current image using a counter stored in [image_counter.txt](http://_vscodecontentref_/8).
 
 ## Configuration
 
