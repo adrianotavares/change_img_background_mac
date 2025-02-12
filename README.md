@@ -9,14 +9,6 @@ This project contains a script and configuration files to automatically change t
 - `logs/standard-out.log`: Log file for standard output.
 - `logs/standard-error.err`: Log file for standard error.
 
-## Images
-
-- img_01.png
-- img_02.png
-- img_03.png
-- img_04.png
-- img_05.png
-
 ## Setup
 
 1. **Clone the repository**:
@@ -47,21 +39,25 @@ This project contains a script and configuration files to automatically change t
 
 ## Script Details
 
-The [change_background.sh](http://_vscodecontentref_/1) script cycles through a set of images named 
-[img_01.png],
-[img_02.png], 
-[img_03.png], 
-[img_04.png], 
-[img_05.png],
-located in the [shell](http://_vscodecontentref_/7) directory. It keeps track of the current image using a counter stored in [image_counter.txt](http://_vscodecontentref_/8).
+The [change_background.sh]() script cycles through a set of images named 
+
+- img_01.png
+- img_02.png
+- img_03.png
+- img_04.png
+- img_05.png
+
+located in the [shell]() directory. It keeps track of the current image using a counter stored in [image_counter.txt]().
 
 ## Configuration
 
-The [change_background.plist](http://_vscodecontentref_/9) file is configured to run the script at login and every hour. You can adjust the interval by modifying the `StartInterval` key in the plist file.
+Run the setup.sh to [setup]() the load agent. 
+
+The [change_background.plist]() file is configured to run the script at login and every hour. You can adjust the interval by modifying the `StartInterval` key in the plist file.
 
 ## Logs
 
-Standard output and error messages are logged to [standard-out.log](http://_vscodecontentref_/10) and [standard-error.err](http://_vscodecontentref_/11) respectively.
+Standard output and error messages are logged to [standard-out.log]() and [standard-error.err]() respectively.
 
 ## License
 
