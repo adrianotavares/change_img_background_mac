@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
     <key>Label</key>
-    <string>co.inter.change_background</string>
+    <string>change_background</string>
     <key>ProgramArguments</key>
     <array>
         <string>/Users/<user>/dev/shell/change_background.sh</string>

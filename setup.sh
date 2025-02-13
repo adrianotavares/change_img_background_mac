@@ -10,4 +10,4 @@ cp change_background.plist /Library/LaunchAgents/
 launchctl load /Library/LaunchAgents/change_background.plist
 
 # VERIFY
-launchctl list | grep co.inter.change_background 
+launchctl list | grep change_background 

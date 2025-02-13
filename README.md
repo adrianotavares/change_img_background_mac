@@ -24,17 +24,17 @@ This project contains a script and configuration files to automatically change t
 
 3. **Copy the plist file to the LaunchAgents directory**:
     ```sh
-    cp change_background.plist ~/Library/LaunchAgents/co.inter.change_background.plist
+    cp change_background.plist ~/Library/LaunchAgents/change_background.plist
     ```
 
 4. **Load the plist file**:
     ```sh
-    launchctl load ~/Library/LaunchAgents/co.inter.change_background.plist
+    launchctl load ~/Library/LaunchAgents/change_background.plist
     ```
 
 5. **Verify that the plist file is loaded**:
     ```sh
-    launchctl list | grep co.inter.change_background
+    launchctl list | grep change_background
     ```
 
 ## Script Details
