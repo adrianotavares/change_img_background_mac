@@ -1,7 +1,5 @@
 #!/bin/bash
 
-#!/bin/bash
-
 # Caminho do diretório onde os arquivos de imagem estão localizados
 IMAGE_DIR="/Users/<user>/dev/shell/"
 IMAGE_PREFIX="img_"
@@ -35,10 +33,14 @@ CURRENT_IMAGE="${IMAGE_DIR}${IMAGE_PREFIX}$(printf "%02d" $COUNTER)${IMAGE_SUFFI
 DIRECTORY="/Library/Desktop Pictures"
 
 # Caminho do mais novo arquivo
-NEWEST_FILE=$(ls -t "$DIRECTORY"/*.png | head -n 1)
-
-# Imprimir o arquivo mais recente encontrado
-echo "newest: $NEWEST_FILE img: $CURRENT_IMAGE"
+# NEWEST_FILE=$(ls -t "$DIRECTORY"/*.png | head -n 1)
+NEWEST_FILE=$(ls "$DIRECTORY"/wall_*.png | sort -t '_' -k 2,2 -k 3,3 -k 4,4r | head -n 1)
 
 # Copiar e renomear o arquivo
 cp "$CURRENT_IMAGE" "$NEWEST_FILE" 
+
+# Excluir outros arquivos .png no diretório, exceto o mais recente
+find "$DIRECTORY" -name 'wall_*.png' ! -name "$(basename "$NEWEST_FILE")" -exec rm {} \;
+
+# Imprimir o arquivo mais recente encontrado
+echo "newest: $NEWEST_FILE img: $CURRENT_IMAGE"
